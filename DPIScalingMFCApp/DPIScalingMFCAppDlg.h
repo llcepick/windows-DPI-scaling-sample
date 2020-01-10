@@ -4,7 +4,7 @@
 
 #pragma once
 #include "afxwin.h"
-#include <map>;
+#include <map>
 
 
 // CDPIScalingMFCAppDlg dialog
