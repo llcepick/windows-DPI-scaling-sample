@@ -59,7 +59,7 @@ int main(int nArg, char** pArgArray)
 		else
 		{
 			
-			std::wcout << L"display name obtained: " << deviceName.monitorFriendlyDeviceName << std::endl;
+			std::wcout << L"Display name "<< iIndex << " obtained: " << deviceName.monitorFriendlyDeviceName << std::endl;
 			std::wstring nameString = std::to_wstring(iIndex) + std::wstring(L". ") + deviceName.monitorFriendlyDeviceName;
 			if (DISPLAYCONFIG_OUTPUT_TECHNOLOGY_INTERNAL == deviceName.outputTechnology)
 			{
@@ -105,6 +105,7 @@ int main(int nArg, char** pArgArray)
 		iIndex = 0;
 		int currentIndex = -1;
 		std::wstring strCurrent;
+		std::wcout << L"Supported DPI for monitor:" << std::endl;
 		for (const auto& dpi : DpiVals)
 		{
 			if ((dpi >= dpiInfo.mininum) && (dpi <= dpiInfo.maximum))
@@ -118,17 +119,13 @@ int main(int nArg, char** pArgArray)
 				iIndex++;
 			}
 		}
+		std::wcout << std::endl;
 
 		if (-1 == currentIndex)
 		{
 			std::wcout << L"Error! Could not find currently set DPI";
 			return false;
 		}
-		else
-		{
-			std::wcout << L"Current DPI: " << strCurrent << std::endl;
-		}
-
 		
 		if( pArgArray[dpiIndex][0]!=0 && isdigit(pArgArray[dpiIndex][0]))
 		{
@@ -169,10 +166,23 @@ int main(int nArg, char** pArgArray)
 				}
 				else
 				{
-					std::cout <<"Invalid DPI setting" << std::endl;
+					if( dpiToSet >= 100)
+					{
+						std::cout <<"Invalid DPI setting" << std::endl;
+					}
 				}
 			}
 		}
 	}
+	else
+	{
+		std::cout << std::endl << "Set Windows 8.1 and Windows 10 Per Monitor DPI" << std::endl;
+		std::cout <<"Usage:" << std::endl;
+		std::cout <<"DPIScalingCmdLine {monitor index} {DPI}" << std::endl;
+		std::cout <<"\tmonitor index - optional - 0-based index of monitor to set DPI on" << std::endl;
+		std::cout <<"\t                         - if >= 100 and no DPI value - will set primary monitor DPI" << std::endl;
+		std::cout <<"\tDPI - optional - DPI value to set - must be supported by monitor" << std::endl;
+	}
 	return 1;
 }
+
