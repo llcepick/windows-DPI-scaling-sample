@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg2985">
+  <defs
+     id="defs2987">
+    <linearGradient
+       id="linearGradient3753">
+      <stop
+         id="stop3755"
+         style="stop-color:#2727ff;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3757"
+         style="stop-color:#0000a1;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <radialGradient
+       cx="13.5"
+       cy="13.5"
+       r="10.5"
+       fx="13.5"
+       fy="13.5"
+       id="radialGradient3759"
+       xlink:href="#linearGradient3753"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.904762,0,0,1.6190476,-1.714286,-0.8571431)" />
+    <radialGradient
+       cx="13.5"
+       cy="31"
+       r="6.5"
+       fx="13.5"
+       fy="31"
+       id="radialGradient3802"
+       xlink:href="#linearGradient3753"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.92307692,0,2.3846154)" />
+  </defs>
+  <metadata
+     id="metadata2990">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       width="42"
+       height="36"
+       x="3"
+       y="3"
+       id="rect3761"
+       style="fill:#000000;fill-opacity:1" />
+    <rect
+       width="40"
+       height="34"
+       x="4"
+       y="4"
+       id="rect2983"
+       style="fill:url(#radialGradient3759);fill-opacity:1" />
+    <rect
+       width="42"
+       height="3"
+       x="3"
+       y="43"
+       id="rect3806"
+       style="fill:#000000;fill-opacity:1" />
+    <g
+       transform="translate(6,12)"
+       id="g3793">
+      <path
+         d="m 38,25.5 a 7.5,7.5 0 1 1 -15,0 7.5,7.5 0 1 1 15,0 z"
+         transform="translate(-6,-6.499999)"
+         id="path3765"
+         style="fill:#000000;fill-opacity:1" />
+      <path
+         d="M 20,31 A 6.5,6 0 1 1 7,31 6.5,6 0 1 1 20,31 z"
+         transform="matrix(1,0,0,1.0833333,11,-14.583332)"
+         id="path3767"
+         style="fill:url(#radialGradient3802);fill-opacity:1" />
+      <g
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-17.325902,29)"
+         id="g3787">
+        <rect
+           width="5"
+           height="11"
+           x="34"
+           y="29"
+           id="rect3779"
+           style="fill:#000000;fill-opacity:1" />
+        <rect
+           width="3"
+           height="9"
+           x="35"
+           y="30"
+           id="rect3781"
+           style="fill:#d38d5f;fill-opacity:1" />
+        <rect
+           width="2"
+           height="8"
+           x="36"
+           y="30"
+           id="rect3783"
+           style="fill:#ffcc00;fill-opacity:1" />
+        <rect
+           width="1"
+           height="7"
+           x="37"
+           y="30"
+           id="rect3785"
+           style="fill:#ffdd55;fill-opacity:1" />
+      </g>
+    </g>
+    <rect
+       width="4"
+       height="6"
+       x="22"
+       y="39"
+       id="rect3804"
+       style="fill:#000000;fill-opacity:1" />
+    <path
+       d="m 35,30.5 a 2.5,2.5 0 1 1 -5,0 2.5,2.5 0 1 1 5,0 z"
+       transform="matrix(2.2,0,0,2.4,-41,-42.2)"
+       id="path4922"
+       style="opacity:0.98999999;fill:#e6e6e6;fill-opacity:0.47596154" />
+    <path
+       d="m 31,27.5 a 2.5,2.5 0 1 1 -5,0 2.5,2.5 0 1 1 5,0 z"
+       transform="translate(4,1.5)"
+       id="path4924"
+       style="opacity:0.98999999;fill:#e6e6e6;fill-opacity:0.47596154" />
+  </g>
+</svg>
