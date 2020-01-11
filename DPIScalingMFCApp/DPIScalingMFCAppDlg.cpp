@@ -230,7 +230,7 @@ void CDPIScalingMFCAppDlg::OnBnClickedButton1()
 {
 	
 	auto currDpiSel = m_dpiList.GetCurSel();
-	auto dpiToSet = m_dpiList.GetItemData(currDpiSel);
+	auto dpiToSet = (UINT32)(m_dpiList.GetItemData(currDpiSel)&0xFFFF);
 	auto currDisplaySel = m_displayList.GetCurSel();
 	int CurrentDpiVal = GetDlgItemInt(m_currentDPI.GetDlgCtrlID());
 	if (dpiToSet == CurrentDpiVal)
@@ -241,7 +241,7 @@ void CDPIScalingMFCAppDlg::OnBnClickedButton1()
 
 	int recommendedVal = GetDlgItemInt(m_recommendedDPI.GetDlgCtrlID());
 	DWORD_PTR cacheIndex = m_displayList.GetItemData(currDisplaySel);
-	auto itr = m_displayDataCache.find(cacheIndex);
+	auto itr = m_displayDataCache.find((UINT32)(cacheIndex&0xFFFF));
 
 	if (m_displayDataCache.end() == itr)
 	{
