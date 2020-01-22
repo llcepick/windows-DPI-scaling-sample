@@ -1,4 +1,10 @@
-The visual studio solution contains 3 projects
+<h3>Requirements:</h3>
+* Windows 10 or 8.1
+* Visual Studio 2019 (Community, Professional or Enterprise)
+* Monitor(s) capable of DPI greater than 100% (96 DPI)
+
+<h3>Project</h3>
+The Visual Studio solution contains 3 projects:
 
 1. DPIHelper (static lib)
 This is the helper library which contains class DpiHelper. This has functions for setting and getting DPI.
@@ -7,6 +13,7 @@ This is the MFC UI application sample.
 1. DPIScalingCmdLine
 This is a command line tool suitable for use for scripting.
 
+<h3>DPIScalingMFCApp:</h3>
 Here is how the app looks
 ![DPI scaling MFC app](DPIScalingMFCAppScreenHelp.png)
 
@@ -26,12 +33,12 @@ If you want to set\get DPI scaling from your code, just use the DpiHelper class.
 1. GetDPIScalingInfo(), and
 1. SetDPIScaling()
 
-DpiScalingCmdLine
+<h3>DpiScalingCmdLine</h3>
 This was made to allow for scripting of the DPI scaling per monitor. It will support changing one monitor at a time.
 
 Parameters: 
 
 <pre>DpiScalingCmdLine {monitor number (0 based and optional)} {DPI to use}</pre>
 
-- The monitor number is NOT required to set the DPI for the first monitor, but for all secondary it is required.
-- The DPI will ONLY accept values greater than 100 - and only those supported by the particular monitor
+* The monitor number is NOT required to set the DPI for the first monitor, but for all secondary it is required.
+* The DPI will ONLY accept values greater than 100 - and only those supported by the particular monitor
