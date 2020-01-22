@@ -16,6 +16,7 @@ This is a command line tool suitable for use for scripting.
 
 <h3>DPIScalingMFCApp:</h3>
 Here is how the app looks
+
 ![DPI scaling MFC app](DPIScalingMFCAppScreenHelp.png)
 
 The repo is based on the study I (Lihas/Sahil) did by reverse engineering system settings app (immersive control panel), user32.dll (which contains the API used for DPI scaling).
