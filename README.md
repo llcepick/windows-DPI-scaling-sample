@@ -1,4 +1,5 @@
 <h3>Requirements:</h3>
+
 * Windows 10 or 8.1
 * Visual Studio 2019 (Community, Professional or Enterprise)
 * Monitor(s) capable of DPI greater than 100% (96 DPI)
