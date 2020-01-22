@@ -4,7 +4,7 @@ The visual studio solution contains 3 projects
 This is the helper library which contains class DpiHelper. This has functions for setting and getting DPI.
 1. DPIScalingMFCApp
 This is the MFC UI application sample.
-1. DPIScaling
+1. DPIScalingCmdLine
 This is a command line tool suitable for use for scripting.
 
 Here is how the app looks
@@ -25,3 +25,13 @@ I (Lihas/Sahil) used WinDbg, and ghidra (https://ghidra-sre.org/) in the reverse
 If you want to set\get DPI scaling from your code, just use the DpiHelper class. The main methods in the class are
 1. GetDPIScalingInfo(), and
 1. SetDPIScaling()
+
+DpiScalingCmdLine
+This was made to allow for scripting of the DPI scaling per monitor. It will support changing one monitor at a time.
+
+Parameters: 
+
+<pre>DpiScalingCmdLine {monitor number (0 based and optional)} {DPI to use}</pre>
+
+- The monitor number is NOT required to set the DPI for the first monitor, but for all secondary it is required.
+- The DPI will ONLY accept values greater than 100 - and only those supported by the particular monitor
